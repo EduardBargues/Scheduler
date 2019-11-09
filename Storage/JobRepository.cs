@@ -33,7 +33,7 @@ namespace Storage
                 .Map(dest => dest.JsonData, src => src.JsonData)
                 .Map(dest => dest.Name, src => src.Name);
 
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=eduard;AccountKey=4UmU66PPrP5qV62DsEclEbZg6OHmOEC97sms5wIKJEWnGmEuRQkyC3sSnBixP7ls3Lq1FwrYwS523sazByMvPw==;TableEndpoint=https://eduard.table.cosmos.azure.com:443/;";
+            string connectionString = "PUT YOUR CONNECTION STRING HERE";
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
             CloudTableClient tableClient = storageAccount.CreateCloudTableClient();
             _table = tableClient.GetTableReference("schedule-job");
