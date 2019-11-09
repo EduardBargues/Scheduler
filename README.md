@@ -1,2 +1,2 @@
 # Scheduler
-Proof of concept to create an scheduler based on CRON expressions.
+Project to customize any type of scheduling.
